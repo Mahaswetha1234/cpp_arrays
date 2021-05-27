@@ -19,19 +19,19 @@ int main()
 	}
 	cout<<"enter the position and value";
 	cin>>p;
-    cin>>val;
-    if(p>c)
+        cin>>val;
+        if(p>c)
 	{
 		cout<<"position crossed the array size";
 	}
-    for(int j=n-1;j>=p-1;j--)
+        for(int j=n-1;j>=p-1;j--)
 	{
 		arr[j+1]=arr[j];
 	}
 	arr[p-1]=val;
 	n++;
 	cout<<"elements in array"<<endl;
-    for(int k=0;k<n;k++)
+        for(int k=0;k<n;k++)
 	{
 		cout<<arr[k]<<" ";
 	}
